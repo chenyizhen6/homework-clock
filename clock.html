@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>clock</title>
+            <!--z-index 決定元素的堆疊順序-->
+            <!--border-radius 圓角效果-->
+    <style>
+        #clock{
+            width: 300px;
+            height: 300px;
+            border-radius: 100%;
+            background: rgb(255, 255, 255);
+            border-style:solid;
+            border-width:8px;
+            border-color:  rgba(9, 71, 122, 0.877);
+            margin: auto;
+            background-image:url(diego-ph-2225067-unsplash.jpg);
+            position: relative;
+            z-index: 6;
+        }
+        
+        #hour{
+            height: 9px;
+            width: 20%;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform-origin: right center;
+            z-index: 3;
+            
+
+        }
+
+        #minute{
+            height: 6px;
+			width: 50%;
+			background: rgb(243, 62, 86);
+			position: absolute;
+			top: 50%;
+			left: 0%;
+            transform-origin: right center;
+            z-index: 2;
+           }
+
+        #second{
+            height: 2px;
+            width: 50%;
+            background: rgb(117, 236, 240);
+            position:  absolute;
+            top: 50%;
+            left: 0%;
+            transform-origin: right center;
+            z-index: 1;
+           
+
+        }
+
+        .hour2 {
+            font-size:80px;
+            color: rgba(255, 255, 255, 0.63);
+            right:30px;
+            top: 13%;
+            margin: auto;
+            margin-top: 8px;
+            position:  absolute;
+         
+
+}
+        .hour5 {
+            font-size:80px;
+            color:rgba(26, 24, 24, 0.541);
+            right: 80px;
+            bottom:0%;
+            margin: auto;
+            margin-top: 8px;
+            position:  absolute;
+
+}
+
+        .hour8 {
+            font-size:80px;
+            color:rgba(0, 0, 0, 0.753);
+            left: 30px;
+            bottom: 20%;
+            margin: auto;
+            margin-top: 8px;
+            position:  absolute;
+
+}
+        .hour11 {
+            font-size:80px;
+            color: rgba(0, 0, 0, 0.753);
+            left: 60px;
+            top: -2%;
+            margin: auto;
+            margin-top: 8px;
+            position:  absolute;
+
+}
+        .hour1 {
+            font-size:80px;
+            color: rgba(26, 24, 24, 0.541);
+            right: 80px;
+            top: 0%;
+            margin: auto;
+            margin-top: 8px;
+            position:  absolute;
+         
+
+}
+        .hour4 {
+            font-size:80px;
+            color:  rgba(255, 255, 255, 0.63);
+            right: 30px;
+            bottom: 20%;
+            margin: auto;
+            margin-top: 8px;
+            position:  absolute;
+
+}
+
+        .hour7 {
+            font-size:80px;
+            color:rgba(0, 0, 0, 0.753);
+            left: 80px;
+            bottom: 0%;
+            margin: auto;
+            margin-top: 8px;
+            position:  absolute;
+
+}
+        .hour10 {
+            font-size:80px;
+            color: rgba(0, 0, 0, 0.753);
+            left: 10px;
+            top: 18%;
+            margin: auto;
+            margin-top: 8px;
+            position:  absolute;
+
+}
+        
+       
+        
+
+
+        #circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgba(136, 138, 141, 0.979);
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+            margin: auto;
+            transform-origin: right center;
+        }
+
+        #circle1 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+            margin: auto;
+            transform-origin: right center;
+            z-index: 4;
+        }
+        #circle2 {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+            margin: auto;
+            transform-origin: right center;
+            z-index: 5;
+        }
+
+    
+    
+    </style>
+</head>
+<body
+    background="sebastian-muller-52-unsplash.jpg">
+        <div id="clock">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+
+        <div id="circle"></div>
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+
+        <!--<i>為斜體-->
+        <i class="hour2">2</i>
+        <i class="hour5">5</i>
+        <i class="hour8">8</i>
+        <i class="hour11">11</i>
+        <i class="hour1">1</i>
+        <i class="hour4">4</i>
+        <i class="hour7">7</i>
+        <i class="hour10">10</i>
+
+        <!--直接在 div標籤 寫css樣式--> 
+        <div style="text-align:center;">
+            <img src="diamond4.png"></div>
+        <div style="text-align:center; line-height: 490px ;">
+            <img src="diamond4.png"></div>
+        <div style="position: absolute;right:-10px ;bottom: 123px;">
+            <img src="diamond4.png"></div>
+        <div style="position: absolute;left:-10px ;bottom: 123px;">
+            <img src="diamond4.png"></div>
+        
+    </div>
+    <script>
+        const hour = document.getElementById("hour");
+        const minute = document.getElementById("minute");
+        const second = document.getElementById("second");
+        setInterval(function(){
+            let date = new Date();
+            let h = date.getHours();
+            let m = date.getMinutes();
+            let s = date.getSeconds();
+            hour.style.transform = `rotate( ${h*30+90}deg )`;
+            minute.style.transform = `rotate( ${m*6+90}deg )`;
+            second.style.transform = `rotate( ${s*6+90}deg )`;
+        }, 1000);
+    </script>
+
+    
+</body>
+</html>
